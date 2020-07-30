@@ -45,7 +45,6 @@ vec1 = c("1", "c++", "P language");
 vec2 = c("2", "JAVA", "P langauge");
 df = data.frame(vec1,vec2)
 print(df)
-vec1 = c("1"; "c++"; "P language");
 vec1 = c("C++","Java","Python");
 vec2 = c("P language","P language","P language")
 print(df)
@@ -55,8 +54,7 @@ df[,1]
 df[,0]
 as.data.frame(df[,1],drop=false)
 as.data.frame(df[,1],drop=FALSE)
-pd = data.frame("Name"= c("reena","teena","meena","beena")),"Weight" = c(38,50,60,54),"Age" = c(22,23,24,21))
-pd = data.frame("Name"= c("reena","teena","meena","beena")),"Weight" = c(38,50,60,54),"Age" = c(22,23,24,21));
+
 pd = data.frame("Name"= c("reena","teena","meena","beena"),"Weight" = c(38,50,60,54),"Age" = c(22,23,24,21));
 df2 = df[-1,-1]
 print(df2);
