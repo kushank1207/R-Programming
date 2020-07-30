@@ -93,3 +93,66 @@ pd5
 #decast
 df6 = dcast(pd5,variable+month~names,value.var = "value")
 df6 = dcast(pd5,variable+month~names,value.var = "value")
+
+
+#30July
+X = c("a","b","c","d")
+X[1]
+X[1:3]
+X[X>"a"]
+u = X>"a"
+u = X>"a"
+X[u]
+
+x = list(foo = 1:4,bar=0.6)
+x[1]
+x[[1]]
+x$bar
+x[["bar"]]
+x["bar"]
+
+x = list(foo = 1:4,bar=0.6,baz="hello")
+x[c(1,3)]
+name = "foo"
+x[[name]]
+x$name
+
+
+x = list(a=list(10,12,14),b=c(3.14,2.91))
+x[c(1,3)]
+x[[1]][[3]]
+x[[c(2,1)]]
+
+
+x = list(amity=1:5)
+x$a
+x[["a"]]
+x[["a",exact=FALSE]]
+
+
+x =c(1,2,NA,4,NA,5)
+bad <- is.na(x)
+x[bad]
+x[!bad]
+
+y= c("a","b",NA,"c",NA,"d")
+good = complete.cases(x,y)
+good
+x[good]
+y[good]
+
+x = matrix(1:6,2,3)
+x[1,]
+x[,2]
+x[1,2]
+x[1,2,drop=FALSE]
+x[1,,drop=FALSE]
+x[1,2,drop=TRUE]
+
+Name = c("Reena","Teena","Meena","Beena","Veena")
+Age = c("26","43","40","34","22")
+Child = c("FALSE","TRUE","TRUE","TRUE","FALSE")
+Height = c("5.6","5.4","5.3","4.9","4.9")
+
+df = data.frame(Name,Age,Child,Height)
+df
